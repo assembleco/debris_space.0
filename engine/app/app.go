@@ -167,7 +167,7 @@ func Create() *App {
 	}
 
 	// Check for data directory and abort if not found
-	a.dirData = a.checkDirData("data")
+	a.dirData = a.checkDirData("models")
 	a.log.Info("Using data directory:%s", a.dirData)
 
 	// Create demoPanel to house GUI elements created by the demos
