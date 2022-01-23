@@ -1,4 +1,4 @@
-module github.com/g3n/g3nd
+module github.com/assembleco/space_debris
 
 go 1.13
 
