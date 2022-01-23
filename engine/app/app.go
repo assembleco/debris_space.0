@@ -201,22 +201,26 @@ func Create() *App {
 	// Setup scene
 	a.setupScene()
 
-	// If name of test supplied in the command line
-	// set it as the current test and initialize it.
+	// If name of scene supplied in the command line
+	// set it as the current scene and initialize it.
+	scene_name := "shader.earth"
+
 	if len(flag.Args()) > 0 {
-		tname := flag.Args()[0]
-		a.log.Info("ARGS")
-		test, ok := DemoMap[tname]
-		if ok {
-			a.log.Info("Start")
-			a.currentDemo = test
-			a.currentDemo.Start(a)
-		}
-		if a.currentDemo == nil {
-			a.log.Error("Invalid demo name")
-			usage()
-			return nil
-		}
+		scene_name = flag.Args()[0]
+	}
+
+	a.log.Info("ARGS")
+	scene, ok := DemoMap[scene_name]
+
+	if ok {
+		a.log.Info("Start")
+		a.currentDemo = scene
+		a.currentDemo.Start(a)
+	}
+	if a.currentDemo == nil {
+		a.log.Error("Invalid scene name")
+		usage()
+		return nil
 	}
 
 	return a
