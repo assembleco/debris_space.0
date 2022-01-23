@@ -5,7 +5,7 @@ import (
 
 	"github.com/g3n/engine/gui"
 	"github.com/g3n/engine/math32"
-	"github.com/assembleco/space_debris/engine/app"
+	"github.com/assembleco/debris_space/engine/app"
 )
 
 func init() {

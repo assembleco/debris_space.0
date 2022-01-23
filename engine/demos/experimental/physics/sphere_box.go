@@ -12,7 +12,7 @@ import (
 	"github.com/g3n/engine/math32"
 	"github.com/g3n/engine/util/helper"
 	"github.com/g3n/engine/window"
-	"github.com/assembleco/space_debris/engine/app"
+	"github.com/assembleco/debris_space/engine/app"
 )
 
 func init() {

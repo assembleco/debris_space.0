@@ -1,4 +1,4 @@
-module github.com/assembleco/space_debris
+module github.com/assembleco/debris_space
 
 go 1.13
 

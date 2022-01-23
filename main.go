@@ -1,21 +1,21 @@
 package main
 
 import (
-	_ "github.com/assembleco/space_debris/engine/demos/animation"
-	_ "github.com/assembleco/space_debris/engine/demos/audio"
-	_ "github.com/assembleco/space_debris/engine/demos/experimental/physics"
-	_ "github.com/assembleco/space_debris/engine/demos/geometry"
-	_ "github.com/assembleco/space_debris/engine/demos/gui"
-	_ "github.com/assembleco/space_debris/engine/demos/helper"
-	_ "github.com/assembleco/space_debris/engine/demos/light"
-	_ "github.com/assembleco/space_debris/engine/demos/loader"
-	_ "github.com/assembleco/space_debris/engine/demos/material"
-	_ "github.com/assembleco/space_debris/engine/demos/other"
-	_ "github.com/assembleco/space_debris/engine/demos/shader"
-	_ "github.com/assembleco/space_debris/engine/demos/tests"
-	_ "github.com/assembleco/space_debris/engine/demos/texture"
+	_ "github.com/assembleco/debris_space/engine/demos/animation"
+	_ "github.com/assembleco/debris_space/engine/demos/audio"
+	_ "github.com/assembleco/debris_space/engine/demos/experimental/physics"
+	_ "github.com/assembleco/debris_space/engine/demos/geometry"
+	_ "github.com/assembleco/debris_space/engine/demos/gui"
+	_ "github.com/assembleco/debris_space/engine/demos/helper"
+	_ "github.com/assembleco/debris_space/engine/demos/light"
+	_ "github.com/assembleco/debris_space/engine/demos/loader"
+	_ "github.com/assembleco/debris_space/engine/demos/material"
+	_ "github.com/assembleco/debris_space/engine/demos/other"
+	_ "github.com/assembleco/debris_space/engine/demos/shader"
+	_ "github.com/assembleco/debris_space/engine/demos/tests"
+	_ "github.com/assembleco/debris_space/engine/demos/texture"
 
-	"github.com/assembleco/space_debris/engine/app"
+	"github.com/assembleco/debris_space/engine/app"
 )
 
 func main() {

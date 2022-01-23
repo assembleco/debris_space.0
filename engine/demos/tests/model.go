@@ -6,7 +6,7 @@ import (
 
 	"github.com/g3n/engine/math32"
 	"github.com/g3n/engine/util/helper"
-	"github.com/assembleco/space_debris/engine/app"
+	"github.com/assembleco/debris_space/engine/app"
 )
 
 // Sets the category and name of your test in the demos.Map
