@@ -43,7 +43,7 @@ type App struct {
 	mainPanel  *gui.Panel
 	demoPanel  *gui.Panel
 	labelFPS   *gui.Label         // header FPS label
-	treeTests  *gui.Tree          // tree with test names
+	sceneArch  *gui.Tree          // tree with test names
 	stats      *stats.Stats       // statistics object
 	statsTable *stats.StatsTable  // statistics table panel
 	control    *gui.ControlFolder // Pointer to gui control panel
@@ -394,12 +394,12 @@ func (a *App) buildGui(demoMap map[string]IDemo) {
 	header.Add(a.control)
 
 	// Test list
-	a.treeTests = gui.NewTree(175, 0)
+	a.sceneArch = gui.NewTree(175, 0)
 
 	// TODO This does not persist - have to change style / but better yet is to improve GUI so that individual style changes can be performed this way
-	//a.treeTests.SetBorders(0, 1, 1, 1)
+	//a.sceneArch.SetBorders(0, 1, 1, 1)
 
-	a.treeTests.SetLayoutParams(&gui.DockLayoutParams{Edge: gui.DockLeft})
+	a.sceneArch.SetLayoutParams(&gui.DockLayoutParams{Edge: gui.DockLeft})
 	// Sort test names
 	tnames := []string{}
 	nodes := make(map[string]*gui.TreeNode)
@@ -414,7 +414,7 @@ func (a *App) buildGui(demoMap map[string]IDemo) {
 			category := parts[0]
 			node := nodes[category]
 			if node == nil {
-				node = a.treeTests.AddNode(category)
+				node = a.sceneArch.AddNode(category)
 				nodes[category] = node
 			}
 			labelText := strings.Join(parts[1:], ".")
@@ -424,11 +424,11 @@ func (a *App) buildGui(demoMap map[string]IDemo) {
 		} else {
 			item := gui.NewLabel(name)
 			item.SetUserData(demoMap[name])
-			a.treeTests.Add(item)
+			a.sceneArch.Add(item)
 		}
 	}
-	a.treeTests.Subscribe(gui.OnChange, func(evname string, ev interface{}) {
-		sel := a.treeTests.Selected()
+	a.sceneArch.Subscribe(gui.OnChange, func(evname string, ev interface{}) {
+		sel := a.sceneArch.Selected()
 		if sel == nil {
 			return
 		}
@@ -440,7 +440,7 @@ func (a *App) buildGui(demoMap map[string]IDemo) {
 			a.currentDemo = test
 		}
 	})
-	a.mainPanel.Add(a.treeTests)
+	a.mainPanel.Add(a.sceneArch)
 }
 
 // setupScene resets the current scene for executing a new (or first) test
