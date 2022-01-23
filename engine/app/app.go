@@ -90,8 +90,8 @@ func usage() {
 }
 
 const (
-	progName = "G3N Demo" // TODO set title (create pair of files for build tags)
-	execName = "g3nd"
+	progName = "Debris Space"
+	execName = "debris_space"
 	vmajor   = 0
 	vminor   = 6
 )
@@ -103,7 +103,7 @@ func Create() *App {
 	a.Application = app.App()
 
 	// Creates application logger
-	a.log = logger.New("G3ND", nil)
+	a.log = logger.New("DS", nil)
 	a.log.AddWriter(logger.NewConsole(false))
 	a.log.SetFormat(logger.FTIME | logger.FMICROS)
 	a.log.SetLevel(logger.DEBUG)
