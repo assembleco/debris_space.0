@@ -1,11 +1,11 @@
 # G3ND - G3N Game Engine Demo
 
 G3ND is the demo for the [G3N](https://github.com/g3n/engine) 3D game engine.
-It demonstrates and exercises the main features of the engine. Browsing and reading through the source code of the [demos](https://github.com/g3n/g3nd/tree/master/demos) is a great way to learn how to use the engine.
+It demonstrates and exercises the main features of the engine. Browsing and reading through the source code of the [demos](https://github.com/assembleco/space_debris/engine/tree/master/demos) is a great way to learn how to use the engine.
 It's very easy to create a new demo as the main program takes care of initializing common objects and components.
 
 <p align="center">
-  <img style="float: right;" src="https://raw.githubusercontent.com/g3n/g3nd/master/data/images/g3nd_screenshots.png" alt="G3ND In Action"/>
+  <img style="float: right;" src="https://raw.githubusercontent.com/assembleco/space_debris/engine/master/data/images/g3nd_screenshots.png" alt="G3ND In Action"/>
 </p>
 
 # Dependencies
@@ -62,7 +62,7 @@ package tests
 import (
 	"github.com/g3n/engine/graphic"
 	"github.com/g3n/engine/math32"
-	"github.com/g3n/g3nd/app"
+	"github.com/assembleco/space_debris/engine/app"
 	"time"
 )
 

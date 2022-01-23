@@ -1,21 +1,21 @@
 package main
 
 import (
-	_ "github.com/g3n/g3nd/demos/animation"
-	_ "github.com/g3n/g3nd/demos/audio"
-	_ "github.com/g3n/g3nd/demos/experimental/physics"
-	_ "github.com/g3n/g3nd/demos/geometry"
-	_ "github.com/g3n/g3nd/demos/gui"
-	_ "github.com/g3n/g3nd/demos/helper"
-	_ "github.com/g3n/g3nd/demos/light"
-	_ "github.com/g3n/g3nd/demos/loader"
-	_ "github.com/g3n/g3nd/demos/material"
-	_ "github.com/g3n/g3nd/demos/other"
-	_ "github.com/g3n/g3nd/demos/shader"
-	_ "github.com/g3n/g3nd/demos/tests"
-	_ "github.com/g3n/g3nd/demos/texture"
+	_ "github.com/assembleco/space_debris/engine/demos/animation"
+	_ "github.com/assembleco/space_debris/engine/demos/audio"
+	_ "github.com/assembleco/space_debris/engine/demos/experimental/physics"
+	_ "github.com/assembleco/space_debris/engine/demos/geometry"
+	_ "github.com/assembleco/space_debris/engine/demos/gui"
+	_ "github.com/assembleco/space_debris/engine/demos/helper"
+	_ "github.com/assembleco/space_debris/engine/demos/light"
+	_ "github.com/assembleco/space_debris/engine/demos/loader"
+	_ "github.com/assembleco/space_debris/engine/demos/material"
+	_ "github.com/assembleco/space_debris/engine/demos/other"
+	_ "github.com/assembleco/space_debris/engine/demos/shader"
+	_ "github.com/assembleco/space_debris/engine/demos/tests"
+	_ "github.com/assembleco/space_debris/engine/demos/texture"
 
-	"github.com/g3n/g3nd/app"
+	"github.com/assembleco/space_debris/engine/app"
 )
 
 func main() {

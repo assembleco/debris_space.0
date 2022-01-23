@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/g3n/engine/gui"
-	"github.com/g3n/g3nd/app"
+	"github.com/assembleco/space_debris/engine/app"
 )
 
 func init() {

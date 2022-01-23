@@ -9,8 +9,8 @@ import (
 	"github.com/g3n/engine/material"
 	"github.com/g3n/engine/math32"
 	"github.com/g3n/engine/util/helper"
-	"github.com/g3n/g3nd/app"
-	"github.com/g3n/g3nd/util"
+	"github.com/assembleco/space_debris/engine/app"
+	"github.com/assembleco/space_debris/engine/util"
 )
 
 func init() {

@@ -82,28 +82,28 @@
   </library_lights>
   <library_images>
     <image id="brick1_jpg" name="brick1_jpg">
-      <init_from>/home/s/g3n/src/github.com/g3n/g3nd/data/images/brick1.jpg</init_from>
+      <init_from>/home/s/g3n/src/github.com/assembleco/space_debris/engine/data/images/brick1.jpg</init_from>
     </image>
     <image id="ground2_jpg" name="ground2_jpg">
-      <init_from>/home/s/g3n/src/github.com/g3n/g3nd/data/images/ground2.jpg</init_from>
+      <init_from>/home/s/g3n/src/github.com/assembleco/space_debris/engine/data/images/ground2.jpg</init_from>
     </image>
     <image id="wall1_jpg" name="wall1_jpg">
-      <init_from>/home/s/g3n/src/github.com/g3n/g3nd/data/images/wall1.jpg</init_from>
+      <init_from>/home/s/g3n/src/github.com/assembleco/space_debris/engine/data/images/wall1.jpg</init_from>
     </image>
     <image id="uvgrid_jpg" name="uvgrid_jpg">
-      <init_from>/home/s/g3n/src/github.com/g3n/g3nd/data/images/uvgrid.jpg</init_from>
+      <init_from>/home/s/g3n/src/github.com/assembleco/space_debris/engine/data/images/uvgrid.jpg</init_from>
     </image>
     <image id="tiger1_jpg" name="tiger1_jpg">
-      <init_from>/home/s/g3n/src/github.com/g3n/g3nd/data/images/tiger1.jpg</init_from>
+      <init_from>/home/s/g3n/src/github.com/assembleco/space_debris/engine/data/images/tiger1.jpg</init_from>
     </image>
     <image id="uvtest_png" name="uvtest_png">
-      <init_from>/home/s/g3n/src/github.com/g3n/g3nd/data/images/uvtest.png</init_from>
+      <init_from>/home/s/g3n/src/github.com/assembleco/space_debris/engine/data/images/uvtest.png</init_from>
     </image>
     <image id="cube2_png_001" name="cube2_png_001">
-      <init_from>/home/s/g3n/src/github.com/g3n/g3nd/data/collada/cube2.png</init_from>
+      <init_from>/home/s/g3n/src/github.com/assembleco/space_debris/engine/data/collada/cube2.png</init_from>
     </image>
     <image id="cube2_png" name="cube2_png">
-      <init_from>/home/s/g3n/src/github.com/g3n/g3nd/data/collada/cube2.png</init_from>
+      <init_from>/home/s/g3n/src/github.com/assembleco/space_debris/engine/data/collada/cube2.png</init_from>
     </image>
   </library_images>
   <library_effects>
