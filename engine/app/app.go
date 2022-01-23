@@ -90,8 +90,8 @@ func usage() {
 }
 
 const (
-	progName = "Debris Space"
-	execName = "debris_space"
+	progName = "debris_space"
+	execName = "ds"
 	vmajor   = 0
 	vminor   = 6
 )
