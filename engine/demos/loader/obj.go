@@ -1,7 +1,6 @@
 package loader
 
 import (
-	"path/filepath"
 	"time"
 
 	"github.com/g3n/engine/core"
@@ -10,7 +9,6 @@ import (
 	"github.com/g3n/engine/math32"
 	"github.com/g3n/engine/util/helper"
 	"github.com/assembleco/debris_space/engine/app"
-	"github.com/assembleco/debris_space/engine/util"
 )
 
 func init() {
@@ -19,27 +17,13 @@ func init() {
 
 type LoaderObj struct {
 	prevLoaded core.INode
-	selFile    *util.FileSelectButton
 }
 
 // Start is called once at the start of the demo.
 func (t *LoaderObj) Start(a *app.App) {
 
-	// Creates file selection button
-	t.selFile = util.NewFileSelectButton(a.DirData()+"/obj", "Select File", 400, 300)
-	t.selFile.SetPosition(10, 10)
-	t.selFile.FS.SetFileFilters("*.obj")
-	a.DemoPanel().Add(t.selFile)
-	t.selFile.Subscribe("OnSelect", func(evname string, ev interface{}) {
-		fpath := ev.(string)
-		err := t.load(a, fpath)
-		if err == nil {
-			t.selFile.Label.SetText("File: " + filepath.Base(fpath))
-			t.selFile.SetError("")
-		} else {
-			t.selFile.Label.SetText("Select File")
-		}
-	})
+	address := a.DirData()+"/binary/ring.obj"
+	t.load(a, address)
 
 	// Adds white directional front light
 	l1 := light.NewDirectional(&math32.Color{1, 1, 1}, 1.0)
@@ -59,10 +43,6 @@ func (t *LoaderObj) Start(a *app.App) {
 	// Create axes helper
 	axes := helper.NewAxes(2)
 	a.Scene().Add(axes)
-
-	fpath := "obj/cubemultitex.obj"
-	t.load(a, filepath.Join(a.DirData(), fpath))
-	t.selFile.Label.SetText("File: " + filepath.Base(fpath))
 }
 
 func (t *LoaderObj) load(a *app.App, path string) error {
@@ -77,14 +57,12 @@ func (t *LoaderObj) load(a *app.App, path string) error {
 	// Decodes obj file and associated mtl file
 	dec, err := obj.Decode(path, "")
 	if err != nil {
-		t.selFile.SetError(err.Error())
 		return err
 	}
 
 	// Creates a new node with all the objects in the decoded file and adds it to the scene
 	group, err := dec.NewGroup()
 	if err != nil {
-		t.selFile.SetError(err.Error())
 		return err
 	}
 	a.Scene().Add(group)
